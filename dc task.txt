@@ -1,0 +1,16 @@
+void setup(){
+}
+void loop()
+{
+  
+  analogWrite(9, 255);
+  analogWrite(3, 255);
+  
+  bool val = digitalRead(7);
+  
+   digitalWrite(4, val);
+   digitalWrite(5, !val);
+
+  
+  delay(1000);
+}
